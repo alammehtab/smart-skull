@@ -6,7 +6,7 @@ const ImageLinkForm = ({ onInputChange, onPictureSubmit }) => {
     <div>
       <p className="f3">
         {
-          "This face recognizer will definetly detect faces in your pictures. Give it a try."
+          "This smart skull will definetly detect faces in your pictures. Give it a try."
         }
       </p>
       <div className="center">
