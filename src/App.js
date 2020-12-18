@@ -86,6 +86,12 @@ class App extends Component {
   };
 
   onPictureSubmit = () => {
+    if(this.state.input===''){
+      alert('Provide a URL')
+    }
+    else
+    {
+      
     this.setState({ imageUrl: this.state.input });
     fetch("https://vast-tundra-65115.herokuapp.com/imageurl", {
       method: "post",
@@ -115,6 +121,7 @@ class App extends Component {
       .catch((err) => {
         console.log(err);
       });
+    }
   };
 
   render() {
